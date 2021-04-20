@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Vineger</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bonito.css">
+    </head>
+    <body>
+        <div class="container">
+            <header id="cabeca">
+                <button class="btn" id="btnCifra">Vigenere</button>
+            </header>
+
+        <div class="abas" id="cifra">
+
+<div class="divisao">
+        <h1 class="titu">Texto Simples</h1>
+        <textarea  id="entrada"></textarea>
+        <br>
+        <button onclick="Transformar()" class="boton">Criptografar</button> 
+        <button onclick="desCripto()" class="boton">Descriptografar</button>
+        <br>
+</div>
+
+<div class="divisao1">
+    <h1 class="titu" id="emp">Criptografia</h1>
+    <textarea id="saida"></textarea>
+    <br>
+</div>
+
+<div class="divisao2">
+    <h1 class="titu">Chave/Senha</h1>
+    <input type="text" id="chave" onkeypress="return (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)">
+
+
+</div>
+        </div>
+    </div>
+        <script src="cripto.js" ></script>
+    </body>
+</html>
